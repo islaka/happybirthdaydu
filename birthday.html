@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy Birthday Dong Uyen</title>
+    <style>
+        body {
+            background-color: #C34A36;
+            height: 100vh;
+            display: flex;
+            place-items: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            width: 600px;
+            height: auto;
+        }
+        @font-face {
+            font-family: 'Avenir';
+            src: url('AvenirNextLTPro-It.otf');
+        }
+
+        .birthday-text {
+            font-size: 3em;
+            text-align: center;
+            font-family: 'Avenir'
+        }
+
+        .birthday-text span {
+            display: inline-block;
+            animation: colorchange 1s infinite;
+        }
+
+        @keyframes colorchange {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+    </style>
+</head>
+<body>
+    <img src="cake.jpg" alt="Birthday Cake" id="cake">
+    <div class="birthday-text">
+        <span>Happy Birthday Dong Uyen</span>
+    </div>
+    <audio autoplay>
+        <source src="song.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>

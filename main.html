@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Hmm...</title>
+    </style>
+</head>
+<body>
+    <!-- <div class="giftbox-container">
+        <div class="giftbox">
+            <div class="box-tape">
+                <div class="box-tape-left"></div>
+                <div class="box-tape-right"></div>
+                <div class="box-tape-center"></div>
+            </div>
+            <div class="box-gifts">
+                <div class="box-gift-shadow"></div>
+            </div>
+        </div>
+    </div> -->
+    <div class="giftbox-container">
+        <div class="giftbox" id="box1" onclick="showTooltip('tooltip1')"></div>
+        <div class="giftbox" id="box2" onclick="window.location.href='birthday.html'"></div>
+        <div class="giftbox" id="box3" onclick="showTooltip('tooltip3')"></div>
+        <div class="tooltip" id="tooltip1">Please choose box number 2</div>
+        <div class="tooltip" id="tooltip3">Please choose box number 2</div>
+    </div>
+    <script>
+        function showTooltip(id) {
+            var tooltip = document.getElementById(id);
+            tooltip.style.display = 'block';
+            setTimeout(function() {
+                tooltip.style.display = 'none';
+            }, 1000); // The tooltip will be hidden after 3 seconds
+        }
+    </script>
+
+</body>
+</html>
